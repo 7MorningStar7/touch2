@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{
+    height: 100px;
+    width: 150px;
+    margin: 30px;
+}
+.item1{
+    background-color: red;
+}
+.item2{
+    background-color: yellow;
+}
+.item3{
+    background-color: black;
+}
+.item4{
+    background-color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <div class="items item1" id="item11"></div>
+<div class="items item2" id="item22"></div>
+<div class="items item3" id="item33"></div>
+<div class="items item4" id="item44"></div>
+
+<script>
+    var $ = document;
+var item1 = $.getElementById('item11')
+var item2 = $.getElementById('item22')
+var item3 = $.getElementById('item33')
+var item4 = $.getElementById('item44')
+item1.addEventListener('touchstart', function () {
+    item1.style.backgroundColor="black"
+})
+item2.addEventListener('touchmove', function () {
+    item1.style.backgroundColor="red"
+})
+item1.addEventListener('touchend', function () {
+    item1.style.backgroundColor="blue"
+})
+item1.addEventListener('touchcancel', function () {
+    item1.style.backgroundColor="yellow"
+})
+</script>
+</body>
+</html>
