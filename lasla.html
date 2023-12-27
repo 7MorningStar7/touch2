@@ -22,7 +22,9 @@
 .item4{
     background-color: blue;
 }
-
+.item5{
+    background-color: greenyellow;
+}
     </style>
 </head>
 <body>
@@ -30,13 +32,14 @@
 <div class="items item2" id="item22"></div>
 <div class="items item3" id="item33"></div>
 <div class="items item4" id="item44"></div>
-
+<div class="items item5" id="item55"></div>
 <script>
     var $ = document;
 var item1 = $.getElementById('item11')
 var item2 = $.getElementById('item22')
 var item3 = $.getElementById('item33')
 var item4 = $.getElementById('item44')
+    var item5 = $.getElementById('item55')
 item1.addEventListener('touchstart', function () {
     item1.style.backgroundColor="black"
 })
@@ -48,6 +51,9 @@ item3.addEventListener('touchend', function () {
 })
 item4.addEventListener('touchcancel', function () {
     item4.style.backgroundColor="yellow"
+})
+    item5.addEventListener('click', function () {
+    item5.style.backgroundColor="green"
 })
 </script>
 </body>
